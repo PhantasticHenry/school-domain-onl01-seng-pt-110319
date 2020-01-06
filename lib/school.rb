@@ -1,4 +1,4 @@
-require 'pry'
+   require 'pry'
 
 class School
   
@@ -6,7 +6,7 @@ class School
   
   def initialize(school_name)
     @school_name = school_name
-    @roster = {}
+    @roster = {}  
   end
 
   def grade(number)
@@ -26,7 +26,7 @@ class School
     if @roster.include?(grade) == false
       @roster[grade] = []
     end
-     @roster[grade] << @student_name
+    @roster[grade] << @student_name
   end
 end
 
